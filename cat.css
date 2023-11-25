@@ -1,38 +1,65 @@
+
+*{
+  text-decoration: none;
+ }
+
 body {
     background-image: linear-gradient(teal 50%, salmon);
-    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 
-   }
-   *{
-    text-decoration: none;
    }
    
-   .navbar{
-      background-image:linear-gradient(coral 80%, teal); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-right: 15px; padding-left: 15px; 
+   .header {
+     width: 100%;
+     height: 20vh;
+     background-image: linear-gradient(coral, teal);
+   }
+   
+   nav{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    
+    
+   }
 
+   .navbar{
+      background-image:linear-gradient(coral 80%, teal 20%); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-right: 15px; padding-left: 15px; 
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
    }
-   .navdiv {
-    display: flex; align-items: center; justify-content: space-between; 
-   }
+
    .logo a {
       font-size: 35px; font-weight: 600; color: rgb(241, 241, 241);
    }
+
+   nav ul{
+    width: 100%;
+    margin-top: 10px;
+   }
+
       li{
-      list-style: none; display: inline-block;
+      list-style: none; 
+      display: inline-block;
+     
    }
       li a{
        color: white; font-size: 16px; font-weight: bold; margin-right: 25px;
       }
 
 
-      .navbar {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-      }
       
+     nav.sticky {
+           position: fixed;
+           top: 20px;
+           left: 0;
+           background-color: coral; opacity: 0.85;
+           z-index: 1;
+     }
+
+
       /* xs */
       @media (min-width: 475px) {
         .navbar {
@@ -40,19 +67,6 @@ body {
         }
       }
       
-      /* sm */
-      @media (min-width: 640px) {
-        .navbar {
-          max-width: 640px;
-        }
-      }
-      
-      /* md */
-      @media (min-width: 768px) {
-        .navbar {
-          max-width: 768px;
-        }
-      }
       
       /* lg */
       @media (min-width: 1024px) {
@@ -60,28 +74,11 @@ body {
           max-width: 1024px;
         }
       }
-      
-      /* xl */
-      @media (min-width: 1280px) {
-        .navbar {
-          max-width: 1280px;
-        }
-      }
-
-   .header{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    color: white;
-   }
-
+   
   
   
-  .image1 {
-    position: relative;
+  .cafe-img-container {
+    position: static;
     top: 10px;
     left: 10px;
     border: 1px solid #000000;
@@ -91,7 +88,7 @@ body {
   }
 
   .about {
-    position: relative;
+    position: static;
     background-color: black;
     font:bold; color: whitesmoke;
     
@@ -110,8 +107,8 @@ body {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
-  .image2 {
-    position: relative;
+  .cats-img-container {
+    position: static;
     top: 10px;
     left: 10px;
     border: 1px solid #000000;
@@ -163,9 +160,9 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
-.image4
+.lizard-img-container
    {
-    position: relative;
+    position: static;
     padding: 20px;
 
    }
@@ -176,8 +173,12 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
-    position: fixed;
+    position: static;
     margin-top: 20px;
+}
+
+.api-image {
+  display: none;
 }
 
 h1 {

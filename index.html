@@ -7,33 +7,33 @@
     <link rel="stylesheet" href="cat.css">
 </head>
 <body>
-   
-    <nav class="navbar">
+      <div class="header">
+    <nav id="navbar">
         <div class="navdiv">
             <div class="logo"><a href="#">SHED</a></div>
-            <ul>
+            <ul id="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Reservations</a></li>
                 <li><a href="#">Membership</a></li>
             </ul>
         </div>
-
-    </nav>
-    <header class="header" align="center">
-         </header>
+      </nav>
+       </div>
    
-    <div class="image1">
+        <div class="cafe-img-container">
     <img src="cafe.jpeg" alt="cafe">
    </div>
+
    
+
    <div class="about">
     <h1 align="center">SHED</h1>
     <p align="center">The Only Cat Cafe for Hairless Cats
     </p> 
    </div>
 
-   <div class="image2">
+   <div class="cats-img-container">
     <img src="sphynx-wallpaper-2.png" alt="cats"/>
    </div>
 
@@ -44,14 +44,15 @@
       <div class='p2'>"I wanna Leave! It touched me I wanna Leave!"</div>
    </div>
 
-   <div class="image3">
+   <div class="wrinkles-img-container">
     <img src="sphinx-6.jpeg" alt="wrinkles">
    </div>
   
    <div class='p3'>"It was a lizard. They put us in a room with a lizard."
    </div>
 
-   <div class="image4">
+   
+   <div class="lizard-img-container">
     <img src="lizard-tower-1.jpeg" alt="lizard">
      </div>
 
@@ -61,13 +62,22 @@
 
   <div id="quiz-container">
     <h1> Cat Match </h1>
-    <h2> We will match you with the cat that best suits your personality with 3 easy questions? Don't get scratched! Use Cat Match! </h2>
+    <h2> Plan for your visit! We will match you with the cat that best suits your personality with 3 easy questions? Don't get scratched! Use Cat Match! </h2>
     <div id="question"></div>
     <div id="options"></div>
     <button id="next-btn">Next</button>
-</div>
+    <div id="result" style="display: none;">
+      <h2>Your Result:</h2>
+      <p id="result-text"></p>
+      <img id="result-image" alt="Result Image" style="max-width: 100%; display: none;">
+  </div>
+  </div>
+
+
 
 <script src="cat.js"></script>
+
+
 
    </div>
     
