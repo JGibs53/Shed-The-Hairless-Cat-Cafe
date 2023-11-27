@@ -115,6 +115,22 @@ body {
     
   }
   
+  /* testimonials section */
+
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.2);
+    background-image:linear-gradient(teal, salmon);
+    border-radius: 5px;
+	  padding: 16px;
+	  margin: 16px 0;
+	  font-size: 20px;
+    text-align: center;
+
+  }
+
   .h2 {
     text-align: center;
     margin-left: auto;
@@ -122,10 +138,8 @@ body {
     width: 8em;
     
   }
-
-  .testimonials {
-    display: grid, table-column;
-
+  
+  .p1 {
     box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.2);
     background-image:linear-gradient(teal, salmon);
     border-radius: 5px;
@@ -133,28 +147,36 @@ body {
 	  margin: 16px 0;
 	  font-size: 20px;
     text-align: center;
-
-  }
-
-  .p1 {
-    display: inline-flex;
-    vertical-align: middle;
-    padding: 1rem, 1rem;
   }
 
   .p2 {
-    display: inline-flex;
-  }
-
-  .p3 {
-    display: inline-flex;
     box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.2);
     background-image:linear-gradient(teal, salmon);
     border-radius: 5px;
 	  padding: 16px;
 	  margin: 16px 0;
 	  font-size: 20px;
-    text-align: left;
+    text-align: center;
+  }
+
+  .p3 {
+    box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.2);
+    background-image:linear-gradient(teal, salmon);
+    border-radius: 5px;
+	  padding: 16px;
+	  margin: 16px 0;
+	  font-size: 20px;
+    text-align: center;
+  }
+
+  .p4 {
+    box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.2);
+    background-image:linear-gradient(teal, salmon);
+    border-radius: 5px;
+	  padding: 16px;
+	  margin: 16px 0;
+	  font-size: 20px;
+    text-align: center;
   }
 
   body {
@@ -168,6 +190,7 @@ body {
 
    }
 
+   /* CAT MATCH */
 .quiz-container {
     max-width: 600px;
     margin: 0 auto;
