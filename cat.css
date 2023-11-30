@@ -7,6 +7,7 @@ body {
     background-image: linear-gradient(teal 50%, salmon);
     background-position: center;
     background-size: cover;
+    text-align: center;
 
    }
    
@@ -60,32 +61,56 @@ body {
      }
 
 
-      /* xs */
-      @media (min-width: 475px) {
-        .navbar {
-          max-width: 475px;
+      /* mediaquery phone size */
+      @media screen and (max-width: 480px) {
+        .header {
+          margin-bottom: 40px;
+          text-align: center;
+        
         }
-      }
-      
-      
-      /* lg */
-      @media (min-width: 1024px) {
+
         .navbar {
-          max-width: 1024px;
+          display: flex;
+          flex-direction: row;
+          align-items: center; 
+          max-width: 480px;
+          margin-top: 20px;
+
         }
+      
+        .logo a {
+          font-size: 45px;
+          float: left;
+        }
+        #menu {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+
       }
    
+
+    }
+      
+   
+   
   
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   
-  .cafe-img-container {
-    position: static;
-    top: 10px;
-    left: 10px;
+      
+  .cafe-img {
+    position: relative;
+    margin-bottom: 20px;
     border: 1px solid #000000;
     box-sizing: border-box;
-    box-shadow: 20px;
-    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+  
   }
+
 
   .about {
     position: static;
@@ -115,80 +140,91 @@ body {
     
   }
   
-  /* testimonials section */
+  /* reviews section */
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(teal, salmon);
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  font-size: 20px;
+  text-align: center;
+}
 
 
-  .testimonials {
+.p1,
+.p2,
+.p3,
+.p4 {
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(teal, salmon);
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.wrinkles-img-container,
+.lizard-img-container {
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(teal, salmon);
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.wrinkles-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.wrinkles-img-container {
+  flex: 0 0 50%; 
+}
+
+.p2 {
+  flex: 0 0 50%; 
+}
+
+.lizard-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+
+@media screen and (max-width : 480px) {
+   
+  .reviews-container,
+  .p1,
+  .p2,
+  .p3,
+  .p4,
+  .wrinkles-img-container,
+  .lizard-img-container,
+  .wrinkles-flex-container,
+  .lizard-flex-container {
     display: flex;
     flex-direction: column;
-    box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.2);
-    background-image:linear-gradient(teal, salmon);
-    border-radius: 5px;
-	  padding: 16px;
-	  margin: 16px 0;
-	  font-size: 20px;
-    text-align: center;
-
   }
-
-  .h2 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em;
-    
-  }
-  
-  .p1 {
-    box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.2);
-    background-image:linear-gradient(teal, salmon);
-    border-radius: 5px;
-	  padding: 16px;
-	  margin: 16px 0;
-	  font-size: 20px;
-    text-align: center;
-  }
-
-  .p2 {
-    box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.2);
-    background-image:linear-gradient(teal, salmon);
-    border-radius: 5px;
-	  padding: 16px;
-	  margin: 16px 0;
-	  font-size: 20px;
-    text-align: center;
-  }
-
-  .p3 {
-    box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.2);
-    background-image:linear-gradient(teal, salmon);
-    border-radius: 5px;
-	  padding: 16px;
-	  margin: 16px 0;
-	  font-size: 20px;
-    text-align: center;
-  }
-
-  .p4 {
-    box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.2);
-    background-image:linear-gradient(teal, salmon);
-    border-radius: 5px;
-	  padding: 16px;
-	  margin: 16px 0;
-	  font-size: 20px;
-    text-align: center;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
 }
-.lizard-img-container
-   {
-    position: static;
-    padding: 20px;
 
-   }
+/*Lizard Gussing Game*/
+
+.lizard-guessing-container {
+  font-family: verdana;
+}
+
+
+ 
+
 
    /* CAT MATCH */
 .quiz-container {
@@ -199,7 +235,13 @@ body {
     background-color: #f9f9f9;
     position: static;
     margin-top: 20px;
+} 
+
+.question {
+  font-size: 200cm;
+
 }
+
 
 .api-image {
   display: none;

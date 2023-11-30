@@ -1,8 +1,9 @@
 //sticky navbar
 var navbar = document.getElementById("navbar");
 var menu = document.getElementById("menu");
+var isStickyEnabled = true;
 
-window.onscroll = function(){
+window.handleScroll = function(){
     if(window.scrollY >= menu.offsetTop){
         navbar.classList.add("sticky");
     }
@@ -11,7 +12,30 @@ window.onscroll = function(){
     }
 } 
 
+window.addEventListener('scroll', function() {
+    if (isStickyEnabled) {
+        handleScroll();
+    }
+});
+
+
+const mediaQuery = window.matchMedia('(max-width: 480px)');
+
+function handleMediaQuery(event) {
+    if (event.matches) {
+        isStickyEnabled = false; 
+        navbar.classList.remove("sticky"); 
+    } else {
+        isStickyEnabled = true; 
+        handleScroll(); 
+    }
+}
+
+mediaQuery.addListener(handleMediaQuery);
+handleMediaQuery(mediaQuery); 
+
 //lizard guessing game
+
 const targetNumber = 23;
 let attempts = 0;
 const maxAttempts = 5;
@@ -55,7 +79,8 @@ function setMessage(message) {
 
 
 //cat match quiz
-      const quizData = [
+     
+        const quizData = [
             {
                 question: "Which best describes how much hair your cat should have?",
                 options: ["Barely any", "None", "Jeff Bezos"],
@@ -63,7 +88,7 @@ function setMessage(message) {
             },
             {
                 question: "Finish this sentence, 'Touching your pet should feel like...'",
-                options: ["A tennis ball you found in a pond", "A potato that shakes", "If a bus seat needed lotion"],
+                options: ["the carpet at a movie theater", "a tennis ball you found in a pond", "a potato wrapped in velour."],
                 
             },
             {

@@ -21,46 +21,53 @@
       </nav>
        </div>
    
-        <div class="cafe-img-container">
-    <img src="cafe.jpeg" alt="cafe">
+      <div id="about-container"> 
+       <div class="cafe-img">
+    <img src="images/cafe.jpeg" alt="cafe">
    </div>
-
-   
-
    <div class="about">
-    <h1 align="center">SHED</h1>
-    <p align="center">The Only Cat Cafe for Hairless Cats
+    <h1 >SHED</h1>
+    <p>The Only Cat Cafe exclusively for Hairless Cats
     </p> 
    </div>
-
    <div class="cats-img-container">
-    <img src="sphynx-wallpaper-2.png" alt="cats"/>
+    <img src="images/sphynx-wallpaper-2.png" alt="cats"/>
    </div>
+  </div>
 
        
   
-    <div class="testimonials">
-      <h2 align="center">What Customers Are Saying</h2>
-      <div class='p1'>"Ewwww! This is Gross!"</div>
-      <div class='p2'>"I wanna Leave! It touched me I wanna Leave!"</div>
-     <div class="wrinkles-img-container">
-      <img src="sphinx-6.jpeg" alt="wrinkles">
-      <div class='p3'>"It was a lizard. They said it was a cat but they put us in a room with a lizard."
-     </div>
-     <div class="lizard-img-container">
-      <img src="lizard-tower-1.jpeg" alt="lizard">
-       </div>
-     <div class="p4">
-       - We've never intentionally put anyone in a room with a lizard. Have some lizards got in? Absolutely. 
-       </div>
+  <div class="reviews-container">
+    <h2>What Customers Are Saying</h2>
+    
+    <div class='p1'>"Ewwww! This is Gross!"</div>
   
+  
+    <div class="wrinkles-flex-container">
+      <div class="wrinkles-img-container">
+        <img src="images/sphinx-6.jpeg" alt="wrinkles">
+      </div>
+      <div class="p2">"I wanna Leave! It touched me I wanna Leave!"</div>
     </div>
+  
+    <div class="lizard-flex-container">
+    <div class='p3'>"It was a lizard. They said it was a cat but they put us in a room with a lizard."</div>
+    <div class="lizard-img-container">
+      <img src="images/lizard-tower-1.jpeg" alt="lizard">
+    </div>
+  </div>
+    
+    <div class="p4">
+      - We've never intentionally put anyone in a room with a lizard. Have some lizards got in? Absolutely. 
+    </div>
+  </div>
+  
 
 
      <div class="lizard-guessing-container">
       <h1>How Many Lizards?</h1>
       <p>How many lizards is too many lizards? According to the health department somewhere between 1-50.</p>
-      <p>We'll give you 5 guesses</p>
+      <p>We'll give you 5 tries to guess how many lizards have allegedly been seen here.</p>
       <input type="number" id="guess" min="1" max="50">
       <div id="message"></div>
       <button onclick="checkGuess()" id="guessButton">Submit Guess</button>
