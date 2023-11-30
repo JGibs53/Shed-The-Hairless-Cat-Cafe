@@ -48,7 +48,7 @@ function checkGuess() {
   
         
         if (!number.test(userGuess)) {
-            setMessage("Please enter a valid number between 1 and 50.");
+            setMessage("Negative Lizards? We wish...Please enter a valid number between 1 and 50.");
         } else {
             const guessNumber = parseInt(userGuess);
             attempts++;
