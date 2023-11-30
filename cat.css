@@ -191,13 +191,14 @@ body {
 }
 
 .p2 {
-  flex: 0 0 50%; 
+  flex: 0 0 40%; 
 }
 
 .lizard-flex-container {
   display: flex;
   align-items: center;
 }
+
 
 
 @media screen and (max-width : 480px) {

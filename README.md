@@ -8,7 +8,7 @@ The Capstone requirements include:
 Javascript Array for the questions in the Cat Cafe Quiz 
 
 * Retrieve dada from a third-party API and use it to display something within your app
-The arraz in the quiz fetches an image to display from the third-party API: https://api.thecatapi.com
+The quiz fetches an image to display from the third-party API: https://api.thecatapi.com
 
 * Use a regular expression to validate user input and either prevent the invalid input or inform the user about it. 
 The Lizard Guessing Game uses a regular expression to validate that the user input is between the numbers 1-50 and informs the user that is invalid if they input anything outside of that.
